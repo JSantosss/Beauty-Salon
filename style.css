@@ -1,0 +1,83 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========== VARIABLES ========== */
+:root {
+  --hue: 345;
+  /* HSL color mode 
+  --base-color: hsl(var(--hue) 36% 57%); VERDE CLARO
+  --base-color-second: hsl(var(--hue) 65% 88%); VERDE CLARISSIMO
+  --base-color-alt: hsl(var(--hue) 57% 53%); VERDE
+  --title-color: hsl(var(--hue) 41% 10%); VERDE ESCURO
+  --text-color: hsl(0 0% 46%); CINZA
+  --text-color-light: hsl(0 0% 98%); CINZA BRANCO
+  --body-color: hsl (0 0% 98%); CINZA BRANCO
+   */
+  --base-color: hsl(var(--hue) 100% 60%); /* ROSA escuro */
+  --base-color-second: hsl(var(--hue) 88% 72%); /* F67797 */
+  --base-color-alt: hsl(var(--hue) 57% 53%); /* ROSA MÉDIO */
+  --title-color: hsl(0 0% 0%); /* preto */
+  --text-color: hsl(0 0% 46%); /* cinza*/
+  --text-color-light: hsl(0 0% 98%); /* branco*/
+  --body-color: hsl (0 0% 98%); /*branco */
+}
+
+/* ========== BASE ========== */
+body {
+  font: 400 1rem 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+/* ========== LAYOUT ========== */
+/*font-size: 100% = 16px tamanho padrão 
+ da fonte do navegador
+ 16*4.5 do height: 4.5rem que dá 72px
+ */
+#header {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+nav {
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+.container {
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* ========== HOME ========== */
